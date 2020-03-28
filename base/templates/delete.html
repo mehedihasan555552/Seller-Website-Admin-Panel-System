@@ -1,0 +1,31 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block content %}
+
+<br>
+<div class="row">
+  <div class="col-md-6">
+    <div class="card card-body">
+
+
+      <p>Are you sure want to delete "{{item}}"</p>
+
+      <form class="" action="" method="post">
+        {% csrf_token %}
+
+        <a  class="btn btn-sm btn-warning" href="{% url 'index' %}">Cancel</a>
+
+        <input class="btn btn-sm btn-success" type="submit" name="Confirm" value="Confirm">
+      </form>
+
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+{% endblock %}

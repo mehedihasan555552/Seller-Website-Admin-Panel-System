@@ -1,0 +1,26 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="row">
+  <div class="col-md-8">
+    <div class="card card-body">
+
+      <form style="padding:30px" class="" action="" method="post">
+        {% csrf_token %}
+        {{form}}
+
+        <input class="btn btn-sm btn-primary" type="submit" name="submit" value="Confirm">
+
+      </form>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+{% endblock %}
